@@ -32,6 +32,7 @@ public class ReviewPopulator implements CommandLineRunner {
 		category4 = categoryRepo.save(category4);
 		category5 = categoryRepo.save(category5);
 
+
 		// kids
 		Review reviewKid1 = new Review("Lizzy",
 				"I was there the day Lizzy was born. And from the moment I saw her I knew; she was going to be terrible. When I first held her, she glared at me. I have never forgiven her. She's the most serious person. She has always been good at everything she's done. Sports: Amazing. Studies: Wonderful. Friends: She has too many. I think she thinks she's better than me. Which she's not!",
@@ -49,6 +50,12 @@ public class ReviewPopulator implements CommandLineRunner {
 		Review sweater1 = new Review("Greg's Christmas Sweater",
 				"have I been so gifted, as to see Greg's Chrsitmas Sweater. It was the greatest gift one could recieve. I believe his Great Aunt Mable knitted it for him some years back. It is covered in the finest layer of cat hair, from said Great Aunt Mable. He begins wearing this sweater sometime in mid November and does not take it off till the new year. I dare say he bathes in it. Of all his sweaters this is one of my favorites.",
 				"Recomendation: Keep it", "8.7/10", "image", category1);
+
+
+		
+		Review lifeChoice1 = new Review("Having Children", "When Greg proposed to Carol, he promised he wouldn't become that lame friend who is too busy with his kids to hang out. But he was already a my lame friend- I guess there wasn't any further down to go, so I can't hold this life decision against him. On the whole, I think he's learned a bit about responsibility, but forgotten lots more about music not sung by a choir of six year olds, which I would consider a loss. But Greg has never had cool points to loose, so perhaps it's been a net gain. If it weren't for Lizzy I think this would have been an alright descision.", "know when to stop.", "6/10", "having-children.jpg", category2);
+
+		Review dadJoke1 = new Review("I'm trying to thin about how this one goes", "How do you... Wait, how. There's a peppper... Oh! How do you know know if a pepper is nosey? He gets jalapeno business.", "Needs work.", "7/10", "dad-joke-1.jpg", category5);
 
 	}
 
