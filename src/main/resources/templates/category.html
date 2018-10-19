@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title th:text="|${category.name}|">Category</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1 th:text="|${category.name}|">Category</h1>
+		</header>
+		<main>
+					<h2>Category</h2>
+					<p th:text="|${category.name}|">Category Type</p>
+					<ul>
+					<li th:each="review : ${category.reviews}">
+						<p th:text="|${review.name}|">Review Name</p>
+					</li>
+					</ul>
+		</main>
+		<footer>
+			<a href="/categories">Back</a>
+			<small>&copy; 2018</small>
+		</footer>
+	</div>	
+</body>
+</html>
