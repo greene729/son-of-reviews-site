@@ -20,21 +20,21 @@ public class ReviewController {
 	@Resource
 	ReviewRepository reviewRepo;
 
-	@RequestMapping("")
+	@RequestMapping("/")
+	public String home() {
+		return "index";
+	}
+	
+	@RequestMapping("categories")
 	public String listCourses(Model model) {
 		model.addAttribute("categories", categoryRepo.findAll());
-		return "categories/index";
+		return "categories";
 	}
 
-	@RequestMapping("/{id}")
+	@RequestMapping("categories/{id}")
 	public String listPerson(@PathVariable(value = "id") Long id, Model model) {
 		model.addAttribute("category", categoryRepo.findById(id).get());
-		return "categories/category";
-	}
-
-	@GetMapping("/")
-	public String home() {
-		return "redirect:reviews";
+		return "category";
 	}
 
 	@GetMapping("/reviews")
@@ -47,6 +47,6 @@ public class ReviewController {
 	public String getContact(@PathVariable(value = "id") Long id, Model model) {
 		System.out.println(id);
 		model.addAttribute("review", reviewRepo.findById(id).get());
-		return "reviews";
+		return "review";
 	}
 }
