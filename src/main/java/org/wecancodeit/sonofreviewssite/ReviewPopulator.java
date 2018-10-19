@@ -34,7 +34,7 @@ public class ReviewPopulator implements CommandLineRunner {
 		
 		Review lifeChoice1 = new Review("Having Children", "When Greg proposed to Carol, he promised he wouldn't become that lame friend who is too busy with his kids to hang out. But he was already a my lame friend- I guess there wasn't any further down to go, so I can't hold this life decision against him. On the whole, I think he's learned a bit about responsibility, but forgotten lots more about music not sung by a choir of six year olds, which I would consider a loss. But Greg has never had cool points to loose, so perhaps it's been a net gain. If it weren't for Lizzy I think this would have been an alright descision.", "know when to stop.", "6/10", "having-children.jpg", category2);
 
-		Review dadJoke1 = new Review("I'm trying to thin about how this one does", "How do you... Wait, how. There's a peppper... Oh! How do you know know if a pepper is nosey? He gets jalapeno business.", "Needs work.", "7/10", "dad-joke-1.jpg", category5)
+		Review dadJoke1 = new Review("I'm trying to thin about how this one goes", "How do you... Wait, how. There's a peppper... Oh! How do you know know if a pepper is nosey? He gets jalapeno business.", "Needs work.", "7/10", "dad-joke-1.jpg", category5);
 	}
 
 }
