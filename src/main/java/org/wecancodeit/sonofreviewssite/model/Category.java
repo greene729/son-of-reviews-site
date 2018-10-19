@@ -7,22 +7,20 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-
 @Entity
 public class Category {
-	
+
 	@Id
 	@GeneratedValue
 	private Long id;
 	private String name;
 	@OneToMany(mappedBy = "category")
 	private Collection<Review> reviews;
-	
-	public Category() {}
 
-	public Category(Long id, String name) {
-		super();
-		this.id = id;
+	public Category() {
+	}
+
+	public Category(String name) {
 		this.name = name;
 	}
 
@@ -37,7 +35,5 @@ public class Category {
 	public Collection<Review> getReviews() {
 		return reviews;
 	}
-	
-
 
 }
