@@ -42,6 +42,7 @@ public class ReviewPopulator implements CommandLineRunner {
 		Review reviewKid3 = new Review("Corbin",
 				"Corbin. I mean he's a still a toddler. He seems like a pretty cool little kid I guess. He's super into Spiderman. The most interesting thing about Corbin is the age gap between him and his sisters. Was Corbin a mistake? An unplanned pregnancy? What are you hiding Greg???",
 				"Recomendation: Tell me the truth GREG!", "Pending", "image", category3);
+
 		reviewKid1 = reviewRepo.save(reviewKid1);
 		reviewKid2 = reviewRepo.save(reviewKid2);
 		reviewKid3 = reviewRepo.save(reviewKid3);
@@ -62,16 +63,34 @@ public class ReviewPopulator implements CommandLineRunner {
 		Review sweater5 = new Review("Greg's Kind of Classy Sweater",
 				"rThis one is an honest argyle Greg found for 10% off at JC Penny back in 1999. He didn't belive in Y2K and wore this sweater to our New Years party that year, but that history came out in the next wash and it remains an unassuming argyle sweater. It blends in at business meetings better than a bic ballpoint.",
 				"Recomendation: Keep it", "6.5/10", "image", category1);
+
+		sweater1 = reviewRepo.save(sweater1);
+		sweater2 = reviewRepo.save(sweater2);
+		sweater3 = reviewRepo.save(sweater3);
+		sweater4 = reviewRepo.save(sweater4);
+		sweater5 = reviewRepo.save(sweater5);
+
 		// hobbies
 		Review hobby1 = new Review("Wood Working",
 				"Greg was channel-surfing one day in the fall of 2010 and happened upon a show called 'Rough Cut Woodworking with Tommy Mac' and decided that woodworking was his passion. He went out to the neighborhood hardware depot and got himself all the tools of the trade. At one point, he asked me what I thought of a particular lathe and I told him that until today I had never heard of a lathe, and that he should just go with his gut. Long story same length, he scowled at me and purchased a different lathe. Greg spent the rest of the weekend building what can only be described as the world's biggest birdhouse for the world's smallest bird. If I'm being honest, it was a very good first attempt. I've never seen him so proud of any singular achievement. After that, I think he's only really ever made like 3 more things--an oversized wooden spoon, a featureless, human-shaped doll, and a single bedpost.",
 				"Get back into it. I think you show some real potential. You just need practice", "7/10",
 				"woodworking.jpg", category4);
-		Review lifeChoice1 = new Review("Having Children", "When Greg proposed to Carol, he promised he wouldn't become that lame friend who is too busy with his kids to hang out. But he was already a my lame friend- I guess there wasn't any further down to go, so I can't hold this life decision against him. On the whole, I think he's learned a bit about responsibility, but forgotten lots more about music not sung by a choir of six year olds, which I would consider a loss. But Greg has never had cool points to loose, so perhaps it's been a net gain. If it weren't for Lizzy I think this would have been an alright descision.", "know when to stop.", "6/10", "having-children.jpg", category2);
-		
-		Review dadJoke1 = new Review("I'm trying to thin about how this one goes", "How do you... Wait, how. There's a peppper... Oh! How do you know know if a pepper is nosey? He gets jalapeno business.", "Needs work.", "7/10", "dad-joke-1.jpg", category5);
+
+		hobby1 = reviewRepo.save(hobby1);
+
+		// life choices
+		Review lifeChoice1 = new Review("Having Children",
+				"When Greg proposed to Carol, he promised he wouldn't become that lame friend who is too busy with his kids to hang out. But he was already a my lame friend- I guess there wasn't any further down to go, so I can't hold this life decision against him. On the whole, I think he's learned a bit about responsibility, but forgotten lots more about music not sung by a choir of six year olds, which I would consider a loss. But Greg has never had cool points to loose, so perhaps it's been a net gain. If it weren't for Lizzy I think this would have been an alright descision.",
+				"know when to stop.", "6/10", "having-children.jpg", category2);
+
+		lifeChoice1 = reviewRepo.save(lifeChoice1);
+
+		// dad jokes
+		Review dadJoke1 = new Review("I'm trying to thin about how this one goes",
+				"How do you... Wait, how. There's a peppper... Oh! How do you know know if a pepper is nosey? He gets jalapeno business.",
+				"Needs work.", "7/10", "dad-joke-1.jpg", category5);
+
+		dadJoke1 = reviewRepo.save(dadJoke1);
 	}
 
 }
-
-
