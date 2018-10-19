@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.Lob;
 
 @Entity
 public class Review {
@@ -11,9 +12,10 @@ public class Review {
 	@GeneratedValue
 	private Long id;
 	private String reviewName;
+	@Lob
 	private String reviewDescription;
 	private String recomendation;
-	private int reviewRating;
+	private String reviewRating;
 	private String reviewImage;
 
 	@ManyToOne
@@ -22,7 +24,7 @@ public class Review {
 	public Review() {
 	}
 
-	public Review(String reviewName, String reviewDescription, String recomendation, int reviewRating,
+	public Review(String reviewName, String reviewDescription, String recomendation, String reviewRating,
 			String reviewImage, Category category) {
 		this.reviewName = reviewName;
 		this.reviewDescription = reviewDescription;
@@ -48,7 +50,7 @@ public class Review {
 		return recomendation;
 	}
 
-	public int getReviewRating() {
+	public String getReviewRating() {
 		return reviewRating;
 	}
 
@@ -60,7 +62,4 @@ public class Review {
 		return category;
 	}
 
-	
-	
-	
 }
