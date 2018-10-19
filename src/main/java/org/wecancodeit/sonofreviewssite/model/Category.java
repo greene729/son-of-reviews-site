@@ -20,11 +20,10 @@ public class Category {
 	
 	public Category() {}
 
-	public Category(Long id, String name, Collection<Review> reviews) {
+	public Category(Long id, String name) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.reviews = reviews;
 	}
 
 	public Long getId() {
