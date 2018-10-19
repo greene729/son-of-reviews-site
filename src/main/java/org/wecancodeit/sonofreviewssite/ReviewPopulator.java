@@ -1,5 +1,31 @@
 package org.wecancodeit.sonofreviewssite;
 
-public class ReviewPopulator {
+import javax.annotation.Resource;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Service;
+import org.wecancodeit.sonofreviewssite.model.Category;
+import org.wecancodeit.sonofreviewssite.repository.CategoryRepository;
+import org.wecancodeit.sonofreviewssite.repository.ReviewRepository;
+
+@Service
+public class ReviewPopulator implements CommandLineRunner {
+
+	@Resource
+	CategoryRepository categoryRepo;
+
+	@Resource
+	ReviewRepository reviewRepo;
+
+	Category category1 = new Category("Sweaters");
+	Category category2 = new Category("Life Choices");
+	Category category3 = new Category("Kids: Which is Best");
+	Category category4 = new Category("Hobbies");
+	Category category5 = new Category("Worst Dad Jokes");
+
+	@Override
+	public void run(String... args) throws Exception {
+
+	}
 
 }
