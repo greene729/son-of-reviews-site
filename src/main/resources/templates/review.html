@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title th:text="${review.reviewName}">title</title>
+</head>
+<body>
+	<h1 th:text="${review.reviewName}">review Name</h1>
+	<figure>
+		<img src="|images/${review.reviewImage}|">
+	</figure>
+	<p th:text="${review.reviewRating}">review rating</p>
+	<p th:text="${review.reviewDescription}">description</p>
+	<p th:text="${review.recomendation}"></p>
+</body>
+</html>

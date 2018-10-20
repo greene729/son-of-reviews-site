@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<title>All Reviews</title>
+	<title>Greg's Whole Life, Reviewed</title>
 </head>
 <body>
+	<h1>All Reviews:</h1>
+	<ul>
+		<li th:each="review : ${reviews}">
+<!-- 			TODO: MAKE THIS LINK WORK -->
+			<a th:href="|/reviews/${review.id}|" th:text="|${review.category.name}: ${review.reviewName}|"></a>
+		</li>
+	</ul>
+
 
 </body>
 </html>
