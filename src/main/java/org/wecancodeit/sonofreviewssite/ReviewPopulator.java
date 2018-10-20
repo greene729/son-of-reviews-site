@@ -84,6 +84,7 @@ public class ReviewPopulator implements CommandLineRunner {
 
 		hobby1 = reviewRepo.save(hobby1);
 		hobby2 = reviewRepo.save(hobby2);
+		hobby3 = reviewRepo.save(hobby3);
 
 		// life choices
 		Review lifeChoice1 = new Review("Having Children",
