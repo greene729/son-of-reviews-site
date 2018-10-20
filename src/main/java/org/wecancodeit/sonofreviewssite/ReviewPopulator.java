@@ -86,11 +86,20 @@ public class ReviewPopulator implements CommandLineRunner {
 		lifeChoice1 = reviewRepo.save(lifeChoice1);
 
 		// dad jokes
-		Review dadJoke1 = new Review("I'm trying to thin about how this one goes",
-				"How do you... Wait, how. There's a peppper... Oh! How do you know know if a pepper is nosey? He gets jalapeno business.",
-				"Needs work.", "7/10", "dad-joke-1.jpg", category5);
-
+		Review dadJoke1 = new Review("Joke about a pepper.",
+				"Here is, verbatim, a joke Greg told me once: \"There's this one, that's... How do you... Wait, how. I'm trying to think how this one goes. There's a peppper... Oh! How do you know know if a pepper is nosey? (Greg paused here)... He gets jalapeno business!\" There's an art to delivery in comedy. And then there's the art of delivering a joke so poorly that the delivery is the joke. This skill cannot be mastered, but some master it anyway.",
+				"Needs some work. Would be greatly depricated by being worked on.", "6/10", "dad-joke-1.jpg", category5);
 		dadJoke1 = reviewRepo.save(dadJoke1);
+		
+		Review dadJoke2 = new Review("A surprisingly honest aphorism", "I don't remember what the prank was, but it was April 1st, 2003. Not to toot my own horn, but it was a pretty good prank, and I played Greg like a silk fiddle. After realizing he'd been fooled, Greg looked me dead in the eyes and said \"fool me once, shame on me. But teach a man to fool me, and I'll be fooled for the rest of my life.\"", "engrave this on a statue of Greg.", "20/10", "dad-joke-2.jpg", category5);
+		dadJoke2 = reviewRepo.save(dadJoke2);
+		
+		Review dadJoke3 = new Review("Joke about an overweight gourd", "I've reviewed Greg's halloween sweater, and you can find my [poor] opinion of that documented elsewhere. But it bears mentioning as the catalyst for one of Greg's earliest dad jokes. In December 1998 my cousin was repairing his water main and doing about as well as a drunk sea lion with a ratchet set, and Greg started running out of clean laundry. He had to resort to his terrible Halloween sweater, and after the thanksgiving feast at his parents' house, is was fairly snug. As he was shimmying it over his belly he asked me what I would call an overweight pumpkin. \"What?\", I asked. \"A plumpkin!\", he said, delighted.", "don't quit your day job", "4/10", "dad-joke-3.jpg", category5);
+		dadJoke3 = reviewRepo.save(dadJoke3);
+		
+		Review dadJoke4 = new Review("Joke at the supermarket", "The second time Greg ever used the blender he bought Carol was when we decided to make milkshakes around midnight one tuesday. We'd already portioned the ice cream into the blender when we realized Greg was out of milk, and had to run to the store before it melted. We grabbed some 2% and as we were checking out, the cashier asked us if we wanted the single carton of milk in a bag. Not missing a beat, Greg said, \"no, you can leave it in the carton.\"", "she was just trying to do her job, Greg.", "8/10 for quick thinking", "dad-joke-4.jpg", category5);
+		dadJoke4 = reviewRepo.save(dadJoke4);
+
 	}
 
 }
