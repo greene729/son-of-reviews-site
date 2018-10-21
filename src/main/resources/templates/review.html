@@ -2,8 +2,14 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 	<title th:text="${review.reviewName}">title</title>
+	<link rel="stylesheet" type="text/css" href="/css/review-layout.css">
 </head>
 <body>
+	<nav>
+		<ul>
+			<li th:each="category : ${categories}"><a th:href="|/categories/${category.id}|" th:text="${category.name}">Category Links</a></li>
+		</ul>
+	</nav>
 	<h1 th:text="${review.reviewName}">review Name</h1>
 	<figure>
 		<img src="|images/${review.reviewImage}|">

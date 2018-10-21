@@ -1,0 +1,31 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+body {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+nav {
+	margin: 5px;
+	padding: 5px;
+	display: flex;
+	justify-content: space-around;
+}
+nav li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	border-style: solid;
+	border-width: 2px;
+	margin: 2px;
+	width: 150px;
+	height: 150px;
+}
+nav ul{
+	display: flex;
+}

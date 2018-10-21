@@ -18,11 +18,11 @@ public class ReviewController {
 	@Resource
 	ReviewRepository reviewRepo;
 
-	@RequestMapping("/")
-	public String home() {
-		return "index";
-	}
-	
+//	@RequestMapping("/")
+//	public String home() {
+//		return "index";
+//	}
+
 	@RequestMapping("categories")
 	public String listCourses(Model model) {
 		model.addAttribute("categories", categoryRepo.findAll());
@@ -32,18 +32,21 @@ public class ReviewController {
 	@RequestMapping("categories/{id}")
 	public String listPerson(@PathVariable(value = "id") Long id, Model model) {
 		model.addAttribute("category", categoryRepo.findById(id).get());
+		model.addAttribute("categories", categoryRepo.findAll());
 		return "category";
 	}
 
 	@RequestMapping("/reviews")
 	public String getContacts(Model model) {
 		model.addAttribute("reviews", reviewRepo.findAll());
+		model.addAttribute("categories", categoryRepo.findAll());
 		return "reviews";
 	}
 
 	@RequestMapping("/reviews/{id}")
 	public String getContact(@PathVariable(value = "id") Long id, Model model) {
 		model.addAttribute("review", reviewRepo.findById(id).get());
+		model.addAttribute("categories", categoryRepo.findAll());
 		return "review";
 	}
 }

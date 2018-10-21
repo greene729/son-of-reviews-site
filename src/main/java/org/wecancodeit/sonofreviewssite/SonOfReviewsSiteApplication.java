@@ -8,6 +8,6 @@ public class SonOfReviewsSiteApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SonOfReviewsSiteApplication.class, args);
-		System.out.println("Server running on localhost:8080");
+		System.out.println("Your server is running, you better catch it!");
 	}
 }
