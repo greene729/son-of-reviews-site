@@ -4,10 +4,6 @@ body {
 
 }
 
-body * {
-	margin: 0px 30px;
-}
-
 figure {
 	display: flex;
 	justify-content: center;
@@ -23,6 +19,10 @@ h1 {
 
 main {
 	display: flex;
+}
+
+main * {
+		margin: 0px 30px;
 }
 
 #description {
