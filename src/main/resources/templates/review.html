@@ -3,6 +3,8 @@
 <head>
 	<title th:text="${review.reviewName}">title</title>
 	<link rel="stylesheet" type="text/css" href="/css/review-layout.css">
+	<link rel="stylesheet" type="text/css" href="/css/nav.css">
+	<link rel="stylesheet" type="text/css" href="/css/layout.css">
 </head>
 <body>
 	<nav>
@@ -10,12 +12,23 @@
 			<li th:each="category : ${categories}"><a th:href="|/categories/${category.id}|" th:text="${category.name}">Category Links</a></li>
 		</ul>
 	</nav>
-	<h1 th:text="${review.reviewName}">review Name</h1>
-	<figure>
-		<img src="|images/${review.reviewImage}|">
-	</figure>
-	<p th:text="${review.reviewRating}">review rating</p>
-	<p th:text="${review.reviewDescription}">description</p>
-	<p th:text="${review.recomendation}"></p>
+
+	<main>
+		<div>
+			<h1 th:text="${review.reviewName}">review Name</h1>
+			<figure>
+				<img th:src="@{|/images/${review.reviewImage}|}">
+			</figure>
+			
+		</div>		
+		<div id="description">
+			<p th:text="${review.reviewRating}">review rating</p>
+			<p th:text="${review.reviewDescription}">description</p>
+			<p th:text="${review.recomendation}"></p>
+			
+		</div>
+
+	</main>
+
 </body>
 </html>

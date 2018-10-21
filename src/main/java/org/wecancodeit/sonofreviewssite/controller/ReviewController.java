@@ -18,11 +18,6 @@ public class ReviewController {
 	@Resource
 	ReviewRepository reviewRepo;
 
-//	@RequestMapping("/")
-//	public String home() {
-//		return "index";
-//	}
-
 	@RequestMapping("categories")
 	public String listCourses(Model model) {
 		model.addAttribute("categories", categoryRepo.findAll());
