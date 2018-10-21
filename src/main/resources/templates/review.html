@@ -6,12 +6,12 @@
 	<link rel="stylesheet" type="text/css" href="/css/nav.css">
 	<link rel="stylesheet" type="text/css" href="/css/layout.css">
 </head>
-<body>
 	<nav>
 		<ul>
 			<li th:each="category : ${categories}"><a th:href="|/categories/${category.id}|" th:text="${category.name}">Category Links</a></li>
 		</ul>
 	</nav>
+<body>
 
 	<main>
 		<div>
