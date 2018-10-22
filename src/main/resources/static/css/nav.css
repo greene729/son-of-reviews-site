@@ -3,14 +3,15 @@ nav {
 	padding: 5px;
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 }
 nav li{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 5px;
-	/*border-style: solid;
-	border-width: 2px;*/
+	border-style: solid;
+	border-width: 2px;
 	margin: 2px;
 	width: 100px;
 	height: 100px;
@@ -22,11 +23,14 @@ nav li a {
 	height: 100%;
 }
 
+nav li:hover {
+	background-color: black;
+	color: yellow;
+}
 nav li a:hover {
 	background-color: black;
 	color: yellow;
 }
-
 nav ul{
 	display: flex;
 }
