@@ -93,41 +93,42 @@ public class ReviewPopulator implements CommandLineRunner {
 				"Recommendation: Know when to stop.", "6/10", "having-children.jpg", category2);
 		Review lifeChoice2 = new Review("Jobs",
 				"Greg used to have the best jobs. His first job was working at the local ice cream show. I must have gained five pounds in that time. Then, he worked as a chef in college. He would always give me free meals there too. But now, he's a middle school teacher. And all of my free stuff has gone away. Where's my ice cream Greg? Where is my free stuff? Sure he tutor's my kid in English, but still.",
-				"Recommendation: Get a job that gets me more free stuff.", "7.5/10", "", category2);
+				"Recommendation: Get a job that gets me more free stuff.", "7.5/10", "ice-cream-job.jpg", category2);
 		// house
 		Review lifeChoice3 = new Review("House",
 				"I have to say. Greg's house is pretty cool. The whole place is overlly cute. There is plush pillows and soft blankets as far as the eye can see. Carol and Greg have really blended their two styles together. I will say Carol seems to have a better eye for design than Greg does. The house itself has lots of natural light and funky built ins. They even have original hard woods. The backyard is the perfect size and they even have a tree house. ",
-				"Recommendation: Let Carol Go wild", "9/10", "", category2);
+				"Recommendation: Let Carol Go wild", "9/10", "house.jpg", category2);
 
 		// degree english
 		Review lifeChoice4 = new Review("Degree: English",
 				"You fool, Greg. You FOOL! You could have been anything you wanted to be. You were so smart. And yet you decided to major in English? Yes I know you love reading. I've spent so many summers reading with you. But you nerd! Yes I know you're writting a novel. And yes I am so proud of you for publishing that short story. But come on dude. And YES I know you love being a teacher. And it gives you a purpose and all. But come on man, English?",
-				"Recommendation: You should have listened to your dad.", "2/10", "", category2);
+				"Recommendation: You should have listened to your dad.", "2/10", "degree.jpg", category2);
 
 		lifeChoice1 = reviewRepo.save(lifeChoice1);
 		lifeChoice2 = reviewRepo.save(lifeChoice2);
 		lifeChoice3 = reviewRepo.save(lifeChoice3);
+		lifeChoice4 = reviewRepo.save(lifeChoice4);
 
 		// dad jokes
 		Review dadJoke1 = new Review("Joke about a pepper.",
 				"Here is, verbatim, a joke Greg told me once: \"There's this one, that's... How do you... Wait, how. I'm trying to think how this one goes. There's a peppper... Oh! How do you know know if a pepper is nosey? (Greg paused here)... He gets jalapeno business!\" There's an art to delivery in comedy. And then there's the art of delivering a joke so poorly that the delivery is the joke. This skill cannot be mastered, but some master it anyway.",
 				"Recommendation: Needs some work. Would be greatly depricated by being worked on.", "6/10",
-				"dad-joke-1.jpg", category5);
+				"bad-pepper-joke.jpg", category5);
 		dadJoke1 = reviewRepo.save(dadJoke1);
 
 		Review dadJoke2 = new Review("A surprisingly honest aphorism",
 				"I don't remember what the prank was, but it was April 1st, 2003. Not to toot my own horn, but it was a pretty good prank, and I played Greg like a silk fiddle. After realizing he'd been fooled, Greg looked me dead in the eyes and said \"fool me once, shame on me. But teach a man to fool me, and I'll be fooled for the rest of my life.\"",
-				"Recommendation: Engrave this on a statue of Greg.", "20/10", "dad-joke-2.jpg", category5);
+				"Recommendation: Engrave this on a statue of Greg.", "20/10", "honest-aphorism.jpg", category5);
 		dadJoke2 = reviewRepo.save(dadJoke2);
 
 		Review dadJoke3 = new Review("Joke about an overweight gourd",
 				"I've reviewed Greg's halloween sweater, and you can find my [poor] opinion of that documented elsewhere. But it bears mentioning as the catalyst for one of Greg's earliest dad jokes. In December 1998 my cousin was repairing his water main and doing about as well as a drunk sea lion with a ratchet set, and Greg started running out of clean laundry. He had to resort to his terrible Halloween sweater, and after the thanksgiving feast at his parents' house, is was fairly snug. As he was shimmying it over his belly he asked me what I would call an overweight pumpkin. \"What?\", I asked. \"A plumpkin!\", he said, delighted.",
-				"Recommendation; Don't quit your day job", "4/10", "dad-joke-3.jpg", category5);
+				"Recommendation; Don't quit your day job", "4/10", "plumpkin.jpg", category5);
 		dadJoke3 = reviewRepo.save(dadJoke3);
 
 		Review dadJoke4 = new Review("Joke at the supermarket",
 				"The second time Greg ever used the blender he bought Carol was when we decided to make milkshakes around midnight one tuesday. We'd already portioned the ice cream into the blender when we realized Greg was out of milk, and had to run to the store before it melted. We grabbed some 2% and as we were checking out, the cashier asked us if we wanted the single carton of milk in a bag. Not missing a beat, Greg said, \"no, you can leave it in the carton.\"",
-				"Recomendation: She was just trying to do her job, Greg.", "8/10 for quick thinking", "dad-joke-4.jpg",
+				"Recomendation: She was just trying to do her job, Greg.", "8/10 for quick thinking", "milk-bag.jpg",
 				category5);
 		dadJoke4 = reviewRepo.save(dadJoke4);
 
