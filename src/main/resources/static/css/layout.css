@@ -1,5 +1,5 @@
 * {
-	@import url('https://fonts.googleapis.com/css?family=Niramit');
+	/*@import url('https://fonts.googleapis.com/css?family=Niramit');*/
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -14,3 +14,4 @@ a {
  border: 2px solid black;
  padding: 4px 8px;
 }
+

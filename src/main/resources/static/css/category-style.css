@@ -1,0 +1,10 @@
+#category_review_links a {
+	border-style: solid;
+	border-width: 2px;
+	padding: 3px;
+}
+
+#category_review_links a:hover {
+	background-color: black;
+	color: yellow;
+}

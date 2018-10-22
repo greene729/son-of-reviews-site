@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/category-layout.css">
 	<link rel="stylesheet" type="text/css" href="/css/nav.css">
 	<link rel="stylesheet" type="text/css" href="/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/css/category-style.css">
 </head>
 <body>
 	<nav>
@@ -18,7 +19,7 @@
 		</header>
 
 		<ul>
-			<li th:each="review : ${category.reviews}">
+			<li id="category_review_links" th:each="review : ${category.reviews}">
 				<img th:src="@{|/images/${review.reviewImage}|}" th:href="|/reviews/${review.id}|" th:alt="${review.reviewName}">
 				<a th:href="|/reviews/${review.id}|" th:text="|${review.reviewName}|"></a>
 			</li>
