@@ -1,0 +1,17 @@
+* {
+	/*@import url('https://fonts.googleapis.com/css?family=Niramit');*/
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	color: black;
+	background-color: yellow;
+	font-family: 'open-sans', sans-serif;
+}
+
+a {
+ /*border: 2px solid black;*/
+ padding: 4px 8px;
+}
+
